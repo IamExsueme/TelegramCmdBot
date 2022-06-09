@@ -17,6 +17,11 @@
 - On the `worker source setup.sh && bash start.sh` worker, click the the pencil icon and toggle it on
 - Now open telegram and use the commands below to interact with your bot
 
+## Environment Variables
+- `BOT_TOKEN`
+- `OWNER_ID`
+- `RCLONE_CONFIG_BASE64`
+
 ## Commands
 - To use rclone commands do `/run rclone [param]...`
 ```
