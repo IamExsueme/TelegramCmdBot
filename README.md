@@ -1,6 +1,6 @@
 # HerokuShell-Rclone
- Interface Heroku's shell through Telegram, plus Rclone support
- 
+- Interactive with cloud shell and rclone inside telegram
+ > Heroku has started to suspend the app. Please deploy with caution
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ## Installation
