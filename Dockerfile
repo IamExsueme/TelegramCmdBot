@@ -65,4 +65,3 @@ RUN apt update && apt install -y --no-install-recommends \
 CMD cd /app/TelegramCmdBot && npm install
 
 CMD cd /app/TelegramCmdBot && . ./setup.sh && bash start.sh
-
