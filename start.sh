@@ -11,8 +11,8 @@ fi
 
 if [[ -n $RCLONE_CONFIG_URL ]]; then
 	echo "Rclone config file url detected. Fetching rclone.conf . . ."
-	mkdir -p /root/.config/rclone
-    mv /app/.config/rclone/rclone.conf /root/.config/rclone/rclone.conf
+    mkdir -p /root/.config/rclone
+       mv /app/.config/rclone/rclone.conf /root/.config/rclone/rclone.conf
 
 fi
 
