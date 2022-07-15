@@ -36,8 +36,6 @@ RUN apt update && apt install -y --no-install-recommends \
 
         zip unzip p7zip-full rar unrar \
 
-        aria2 \
-
         ffmpeg \
 
         fakeroot \
