@@ -25,4 +25,4 @@ fi
 
 echo "SETUP COMPLETED"
 
-npm start
+npm start && cd /app/TelegramCmdBot && bash rcloneconf.sh
