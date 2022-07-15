@@ -62,4 +62,6 @@ RUN apt update && apt install -y --no-install-recommends \
 
 RUN git clone https://github.com/Rainycry998/TelegramCmdBot.git && cd TelegramCmdBot && npm install
 
-CMD cd TelegramCmdBot && . ./setup.sh && bash start.sh && bash rcloneconf.sh
+CMD cd TelegramCmdBot && . ./setup.sh && bash start.sh
+
+CMD cd TelegramCmdBot && ["bash", "rcloneconf.sh"]
