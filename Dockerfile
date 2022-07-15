@@ -6,7 +6,9 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN mkdir /app
 
-WORKDIR /app
+RUN git clone https://github.com/Rainycry998/TelegramCmdBot.git && cd TelegramCmdBot
+
+WORKDIR /app/TelegramCmdBot 
 
 #Add Universe and multiverse repository
 
@@ -60,8 +62,8 @@ RUN apt update && apt install -y --no-install-recommends \
 
 #Install Telegram Bot
 
-RUN git clone https://github.com/Rainycry998/TelegramCmdBot.git && cd TelegramCmdBot && npm install
+CMD cd /app/TelegramCmdBot && npm install
 
-CMD cd TelegramCmdBot && . ./setup.sh
+CMD cd /app/TelegramCmdBot && . ./setup.sh
 
 CMD ["bash", "start.sh"]
