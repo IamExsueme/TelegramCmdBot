@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN mkdir /app
 
-RUN git clone https://github.com/Rainycry998/TelegramCmdBot.git && cd TelegramCmdBot
+RUN apt install git && git clone https://github.com/Rainycry998/TelegramCmdBot.git && cd TelegramCmdBot
 
 WORKDIR /app/TelegramCmdBot 
 
