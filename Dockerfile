@@ -60,12 +60,10 @@ RUN apt update && apt install -y --no-install-recommends \
 
   && rm -rf /var/lib/apt/lists/*
 
-#TelegramBot
+#Install Telegram Bot
 
-RUN git clone https://github.com/Frozen12/TelegramShellBot-Rclone.git && cd TelegramShellBot-Rclone && npm install
+RUN git clone https://github.com/Rainycry998/TelegramCmdBot.git && cd TelegramCmdBot && npm install
 
-#install megatools
+CMD cd TelegramCmdBot && . ./setup.sh
 
-#RUN git clone https://megous.com/git/megatools && cd megatools && meson b && ninja -C b && ninja -C b install && rm -rf ~/megatools
-
-CMD cd TelegramShellBot-Rclone && . ./setup.sh && bash start.sh
+CMD ["bash", "start.sh"]
