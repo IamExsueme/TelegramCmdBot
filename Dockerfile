@@ -8,7 +8,7 @@ RUN mkdir /app
 
 RUN apt update && apt install -y git  && git clone https://github.com/Rainycry998/TelegramCmdBot.git && cd TelegramCmdBot
 
-WORKDIR /app/TelegramCmdBot 
+WORKDIR /app/TelegramCmdBot/
 
 #Add Universe and multiverse repository
 
@@ -66,4 +66,4 @@ CMD cd /app/TelegramCmdBot && npm install
 
 CMD cd /app/TelegramCmdBot && . ./setup.sh
 
-CMD ["bash", "start.sh"]
+CMD cd /app/TelegramCmdBot && bash start.sh
