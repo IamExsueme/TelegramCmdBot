@@ -2,10 +2,7 @@ FROM ubuntu:20.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-#Core
-
 RUN mkdir /app
-
 WORKDIR /app
 
 #Add Universe and multiverse repository
@@ -15,12 +12,6 @@ RUN apt update && apt upgrade -y && apt install -y software-properties-common &&
 #install basics packages
 
 #install required packages to compile source
-
-#install dependencies for megatools experimental 1.11.0 (meson also)
-
-#install fusermount3 for rclone 
-
-#Install software (meson for installing megatools experimenal)
 
 RUN apt update && apt install -y --no-install-recommends \
 
