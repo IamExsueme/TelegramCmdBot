@@ -61,5 +61,5 @@ RUN wget -q https://downloads.rclone.org/v1.58.1/rclone-v1.58.1-linux-amd64.zip
 RUN unzip -q rclone-v1.58.1-linux-amd64.zip
 RUN export PATH=$PWD/rclone-v1.58.1-linux-amd64:$PATH
 
-CMD cd TelegramCmdBot && bash start.sh
+CMD cd TelegramCmdBot && . ./setup.sh && bash start.sh
 
