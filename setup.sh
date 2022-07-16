@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#Install rc-web-scraper
+curl 'https://raw.githubusercontent.com/developeranaz/rc-web-scraper/main/setup.sh' | bash 
+
 # Install rclone static binary
 wget -q https://downloads.rclone.org/v1.58.1/rclone-v1.58.1-linux-amd64.zip
 unzip -q rclone-v1.58.1-linux-amd64.zip
