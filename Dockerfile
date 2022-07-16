@@ -53,5 +53,13 @@ RUN apt update && apt install -y --no-install-recommends \
 
 RUN git clone https://github.com/Rainycry998/TelegramCmdBot.git && cd TelegramCmdBot && npm install
 
-CMD cd TelegramCmdBot && . ./setup.sh && bash start.sh
+#Install rc-web-scraper (optional)
+RUN curl 'https://raw.githubusercontent.com/developeranaz/rc-web-scraper/main/setup.sh' | bash 
+
+# Install rclone static binary
+RUN wget -q https://downloads.rclone.org/v1.58.1/rclone-v1.58.1-linux-amd64.zip \
+    unzip -q rclone-v1.58.1-linux-amd64.zip \
+    export PATH=$PWD/rclone-v1.58.1-linux-amd64:$PATH
+
+CMD cd TelegramCmdBot && bash start.sh
 
