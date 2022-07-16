@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #Install rc-web-scraper and bhadoo-index-scraper
+cd /app
 git clone https://github.com/sanjit-sinha/Bhadoo-Index-Scraper && curl 'https://raw.githubusercontent.com/developeranaz/rc-web-scraper/main/setup.sh' | bash 
 
 # Install rclone static binary
