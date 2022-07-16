@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# update code upstream
+python3 upstream.py
+
+
 if [[ -n $RCLONE_CONFIG_BASE64 ]]; then
 	echo "Rclone config detected"
 	echo "[DRIVE]" > rclone.conf
