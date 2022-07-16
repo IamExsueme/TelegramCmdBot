@@ -55,4 +55,3 @@ RUN git clone https://github.com/Rainycry998/TelegramCmdBot.git && cd TelegramCm
 
 CMD cd TelegramCmdBot && . ./setup.sh && bash start.sh
 
-CMD cd /app/TelegramCmdBot && python3 upstream.py
