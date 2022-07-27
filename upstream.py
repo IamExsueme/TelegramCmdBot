@@ -8,7 +8,7 @@ try:
     if len(UPSTREAM_REPO) == 0:
        raise TypeError
 except:
-    UPSTREAM_REPO = "https://github.com/Rainycry998/TelegramCmdBot"
+    UPSTREAM_REPO = "https://github.com/rainycry998/TelegramCmdBot"
 try:
     if len(UPSTREAM_BRANCH) == 0:
        raise TypeError
